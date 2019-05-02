@@ -1,0 +1,51 @@
+/*
+We could delete most of this styles such as font size, margins and font weights because they are the same as browser default values. I choose to leave them so that the next person making changes has easier job understating the code.
+*/
+
+$blue: blue;
+
+.italic {
+ font-style: italic; 
+}
+
+.description {
+  color: black;
+}
+
+.description__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.description__subtitle {
+  margin-bottom: 10px;
+}
+
+.info__link {
+  color: $blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.info__list {
+  padding-left: 30px;
+  visibility: hidden;
+  &.open {
+    visibility: visible;
+  }
+}
+
+.list__item {
+  span {
+    font-weight: bold;
+    color: $blue;
+  }
+}
+
+.note__parahraph {
+  background: $blue;
+  padding: 10px;
+  color: aqua;
+  margin: 16px 0 0;
+}
